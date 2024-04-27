@@ -1,0 +1,15 @@
+.container {
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.notFound {
+  display: flex;
+  justify-content: center;
+  color: orangered;
+  font-size: 50px;
+}

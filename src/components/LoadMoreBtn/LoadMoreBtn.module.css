@@ -1,0 +1,18 @@
+.loadMoreBtnConteiner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.loadMoreBtn {
+  width: 100px;
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 248, 0.675);
+}
+
+.loadMoreBtn:hover {
+  background-color: rgba(0, 0, 248, 0.948);
+}
