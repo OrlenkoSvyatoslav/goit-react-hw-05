@@ -1,8 +1,9 @@
-import css from "../../components/Loader/Loader.module.css";
 import { MutatingDots } from "react-loader-spinner";
-const Loader = () => {
+import css from "../../components/Loading/Loading.module.css";
+
+const Loading = () => {
   return (
-    <div className={css.loader}>
+    <div className={css.loading}>
       <MutatingDots
         visible={true}
         height="100"
@@ -16,4 +17,4 @@ const Loader = () => {
   );
 };
 
-export default Loader;
+export default Loading;
