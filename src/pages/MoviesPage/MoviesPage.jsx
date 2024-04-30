@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import Loading from "../../components/Loading/Loading";
 import MovieList from "../../components/MovieList/MovieList";
+import fetchSearchMovie from "../../movies-search-api";
 
 const MoviesPage = () => {
   const [movies, setMovies] = useState([]);
@@ -19,7 +20,7 @@ const MoviesPage = () => {
       try {
         setLoading(true);
         setError(false);
-        const data = await fetchSearchFilms(filmQuery);
+        const data = await fetchSearchMovie(filmQuery);
         setMovies(data.results);
       } catch (error) {
         setError(true);
