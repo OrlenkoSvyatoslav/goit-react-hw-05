@@ -1,0 +1,27 @@
+.movieContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.movieItem {
+  width: 220px;
+  background-color: rgb(148, 227, 253);
+}
+
+.movieImage {
+  padding: 10px;
+}
+
+.movieText {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.movieLink {
+  color: rgb(80, 80, 80);
+  text-decoration: none;
+}

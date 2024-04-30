@@ -1,11 +1,19 @@
 import { NavLink } from "react-router-dom";
+import css from "../MovieList/MovieList.module.css";
 
 const MovieList = ({ movies }) => {
   return (
-    <ul>
+    <ul className={css.movieContainer}>
       {movies.map((movie) => (
-        <li key={movie.id}>
-          <NavLink to={`/movies/${movie.id}`}>{movie.original_title}</NavLink>
+        <li className={css.movieItem} key={movie.id}>
+          <NavLink className={css.movieLink} to={`/movies/${movie.id}`}>
+            <img
+              className={css.movieImage}
+              src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
+              alt={movie.title}
+            />
+            <p className={css.movieText}>{movie.original_title}</p>
+          </NavLink>
         </li>
       ))}
     </ul>
