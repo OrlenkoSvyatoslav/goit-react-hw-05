@@ -1,0 +1,28 @@
+.castList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.castItem {
+  width: 220px;
+  background-color: orangered;
+  color: white;
+}
+
+.castText {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.castName {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.castImg {
+  padding-left: 10px;
+  padding-top: 10px;
+}

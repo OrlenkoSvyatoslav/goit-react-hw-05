@@ -1,0 +1,17 @@
+.link {
+  text-decoration: none;
+  color: orangered;
+  border-bottom: 2px solid rgb(211, 4, 4);
+}
+
+.navContainer {
+  padding: 20px;
+  display: flex;
+  column-gap: 20px;
+}
+
+.link:hover {
+  color: white;
+  border-bottom: none;
+  border-top: 2px solid white;
+}

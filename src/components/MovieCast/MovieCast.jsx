@@ -2,6 +2,7 @@ import getCastMoviesById from "../../movies-cast-api";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Loading from "../Loading/Loading";
+import css from "../../components/MovieCast/MovieCast.module.css";
 
 const MovieCast = () => {
   const { movieId } = useParams();
@@ -29,15 +30,16 @@ const MovieCast = () => {
       {loading && <Loading />}
       {error && <p>E</p>}
       {movieCast && (
-        <ul>
+        <ul className={css.castList}>
           {movieCast.map((cast) => (
-            <li key={cast.id}>
+            <li className={css.castItem} key={cast.id}>
               <img
+                className={css.castImg}
                 src={`https://image.tmdb.org/t/p/w200${cast.profile_path}`}
                 alt={cast.original_name}
               />
-              <p>{cast.name}</p>
-              <p>Character: {cast.character}</p>
+              <h3 className={css.castName}>{cast.name}</h3>
+              <p className={css.castText}>Character: {cast.character}</p>
             </li>
           ))}
         </ul>

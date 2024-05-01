@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import Loading from "../../components/Loading/Loading";
 import MovieList from "../../components/MovieList/MovieList";
 import fetchSearchMovie from "../../movies-search-api";
+import css from "../../pages/MoviesPage/MoviePage.module.css";
 
 const MoviesPage = () => {
   const [movies, setMovies] = useState([]);
@@ -42,15 +43,18 @@ const MoviesPage = () => {
   };
 
   return (
-    <div>
+    <div className={css.searchContainer}>
       <form onSubmit={handleSearchFilms}>
         <input
+          className={css.searchInput}
           name="search"
           type="text"
           autoComplete="off"
           placeholder="Search any films..."
         />
-        <button type="submit">Search films</button>
+        <button className={css.btn} type="submit">
+          Search films
+        </button>
       </form>
       {loading && <Loading />}
       <MovieList movies={movies} />

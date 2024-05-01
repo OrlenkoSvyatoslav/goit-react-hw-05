@@ -3,13 +3,12 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  list-style: none;
   margin-top: 20px;
 }
 
 .movieItem {
   width: 220px;
-  background-color: rgb(218, 244, 252);
+  background-color: orangered;
 }
 
 .movieImage {
@@ -22,6 +21,14 @@
 }
 
 .movieLink {
-  color: rgb(80, 80, 80);
+  color: rgb(255, 255, 255);
   text-decoration: none;
+}
+
+.movieItem:hover {
+  background-color: rgb(245, 243, 243);
+}
+
+.movieLink:hover {
+  color: orangered;
 }

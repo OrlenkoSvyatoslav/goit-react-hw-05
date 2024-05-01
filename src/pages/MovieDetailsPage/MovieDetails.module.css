@@ -1,0 +1,30 @@
+.link {
+  text-decoration: none;
+  color: orangered;
+  border-bottom: 2px solid rgb(211, 4, 4);
+}
+
+.link:hover {
+  color: white;
+  border-bottom: none;
+  border-top: 2px solid white;
+}
+
+.detailsContaier {
+  padding-left: 20px;
+}
+
+.title {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.detailsList {
+  margin-left: 20px;
+  max-width: 800px;
+}
+
+.detailsImg {
+  max-width: 500px;
+}
