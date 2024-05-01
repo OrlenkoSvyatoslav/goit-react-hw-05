@@ -37,7 +37,7 @@ export default function MovieDetailsPage() {
     <div className={css.detailsContaier}>
       {loading && <Loading />}
       {error && <p>Somthing wrong!</p>}
-      <hr />
+
       <NavLink className={css.link} to={goBackURL.current}>
         Go Back
       </NavLink>
